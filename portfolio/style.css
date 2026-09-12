@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+}
+
+header {
+    text-align: center;
+    padding: 60px 0;
+}
+
+section {
+    margin: 50px 0;
+}
+
+article {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
