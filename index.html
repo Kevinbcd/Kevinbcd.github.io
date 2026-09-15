@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kevin — Étudiant BTS SIO, option Développement</title>
+  <meta name="description" content="Portfolio de Kevin, étudiant en 2e année de BTS SIO option Développement : compétences, projets et veille technologique.">
+
+  <!-- Polices : Space Grotesk (titres), Inter (texte courant), JetBrains Mono (bloc terminal) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Lien d'évitement pour l'accessibilité clavier -->
+  <a class="skip-link" href="#accueil">Aller au contenu principal</a>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigation principale">
+      <a href="#accueil" class="nav-logo">Kevin<span class="dot">.</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Ouvrir le menu de navigation">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#accueil" class="nav-link">Accueil</a></li>
+        <li><a href="#apropos" class="nav-link">À propos</a></li>
+        <li><a href="#competences" class="nav-link">Compétences</a></li>
+        <li><a href="#projets" class="nav-link">Projets</a></li>
+        <li><a href="#formation" class="nav-link">Formation</a></li>
+        <li><a href="#veille" class="nav-link">Veille</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="accueil">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" aria-label="Présentation">
+      <div class="hero-inner container">
+        <div class="hero-text">
+          <p class="hero-kicker">Portfolio de développement</p>
+          <h1>Salut, je suis Kevin</h1>
+          <p class="hero-role">Étudiant en BTS SIO – Développement</p>
+          <p class="hero-tagline">
+            Je m'intéresse au développement informatique et aux nouvelles technologies,
+            et j'apprends chaque jour un peu plus en construisant des projets concrets.
+          </p>
+          <div class="hero-actions">
+            <a href="#projets" class="btn btn-primary">Découvrir mes projets</a>
+            <a href="#contact" class="btn btn-outline">Me contacter</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span class="terminal-dot dot-red"></span>
+              <span class="terminal-dot dot-yellow"></span>
+              <span class="terminal-dot dot-green"></span>
+              <span class="terminal-title">profil.js</span>
+            </div>
+            <pre class="terminal-body"><code><span class="tok-key">const</span> <span class="tok-var">kevin</span> = {
+  role: <span class="tok-str">"Étudiant BTS SIO"</span>,
+  option: <span class="tok-str">"Développement"</span>,
+  année: <span class="tok-str">"2ᵉ année"</span>,
+  intérêts: [<span class="tok-str">"dev web"</span>, <span class="tok-str">"nouvelles technos"</span>],
+  disponible: <span class="tok-bool">true</span>,
+};<span class="cursor"></span></code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== À PROPOS ===================== -->
+    <section id="apropos" class="section">
+      <div class="container section-grid">
+        <div class="section-heading">
+          <h2>À propos</h2>
+        </div>
+
+        <div class="about-content">
+          <div class="about-photo">
+            <!-- Emplacement réservé à la photo de profil : remplacer par une vraie image -->
+            <div class="photo-placeholder" role="img" aria-label="Emplacement réservé pour la photo de profil">
+              <span>Photo à ajouter</span>
+            </div>
+          </div>
+
+          <div class="about-text">
+            <p>
+              Je suis actuellement étudiant en 2<sup>e</sup> année de BTS Services Informatiques
+              aux Organisations (SIO), option Développement.
+            </p>
+            <p>
+              Au fil de ma formation, je me suis spécialisé dans le développement d'applications,
+              en travaillant aussi bien sur des projets front-end que sur des bases de données
+              et des outils de gestion de versions.
+            </p>
+            <p>
+              Mon objectif est de continuer à développer mes compétences en programmation et en
+              technologies web, tout en gardant un œil sur les évolutions du secteur informatique.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COMPÉTENCES ===================== -->
+    <section id="competences" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Compétences</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-badge">HTML</div>
+            <h3>HTML</h3>
+            <p>Structuration sémantique de pages web, accessible et bien organisée.</p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-badge">CSS</div>
+            <h3>CSS</h3>
+            <p>Mise en page responsive, Flexbox, Grid, et animations légères.</p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-badge">JS</div>
+            <h3>JavaScript</h3>
+            <p>Interactivité côté client en JavaScript natif, sans framework.</p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-badge">PY</div>
+            <h3>Python</h3>
+            <p>Scripts et logique applicative pour automatiser des tâches simples.</p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-badge">SQL</div>
+            <h3>SQL</h3>
+            <p>Conception et interrogation de bases de données relationnelles.</p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-badge">GIT</div>
+            <h3>Git</h3>
+            <p>Suivi de versions, branches et gestion de l'historique de projet.</p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-badge">GH</div>
+            <h3>GitHub</h3>
+            <p>Hébergement de dépôts, collaboration et déploiement via GitHub Pages.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJETS ===================== -->
+    <section id="projets" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Projets</h2>
+          <p class="section-subtitle">
+            Les projets ci-dessous sont des exemples fictifs, à remplacer par mes réalisations réelles.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <span class="project-tag">Exemple</span>
+            <h3>Gestionnaire de tâches</h3>
+            <p>Application web permettant de créer, organiser et suivre des tâches par catégorie.</p>
+            <ul class="tech-list">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+            <div class="project-actions">
+              <a href="#" class="btn btn-small btn-primary">Voir le projet</a>
+              <a href="#" class="btn btn-small btn-outline">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-tag">Exemple</span>
+            <h3>API de gestion de contacts</h3>
+            <p>Petite API permettant de stocker et consulter des contacts dans une base de données.</p>
+            <ul class="tech-list">
+              <li>Python</li><li>SQL</li>
+            </ul>
+            <div class="project-actions">
+              <a href="#" class="btn btn-small btn-primary">Voir le projet</a>
+              <a href="#" class="btn btn-small btn-outline">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-tag">Exemple</span>
+            <h3>Site vitrine responsive</h3>
+            <p>Site vitrine one-page, entièrement responsive, sans framework front-end.</p>
+            <ul class="tech-list">
+              <li>HTML</li><li>CSS</li><li>Git</li>
+            </ul>
+            <div class="project-actions">
+              <a href="#" class="btn btn-small btn-primary">Voir le projet</a>
+              <a href="#" class="btn btn-small btn-outline">GitHub</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FORMATION ===================== -->
+    <section id="formation" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Formation</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>BTS SIO – Option Développement, 1<sup>re</sup> année</h3>
+              <p>Acquisition des bases en développement, bases de données et infrastructures réseau.</p>
+            </div>
+          </li>
+          <li class="timeline-item timeline-current">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>BTS SIO – Option Développement, 2<sup>e</sup> année <span class="timeline-badge">En cours</span></h3>
+              <p>Approfondissement du développement d'applications et préparation du dossier de projets.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== VEILLE INFORMATIQUE ===================== -->
+    <section id="veille" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Veille informatique</h2>
+        </div>
+
+        <article class="watch-card">
+          <h3>WebAssembly</h3>
+          <p>
+            WebAssembly (Wasm) est un format d'exécution binaire conçu pour faire tourner du code
+            à des performances proches du natif directement dans le navigateur, en complément de
+            JavaScript.
+          </p>
+          <h4>Pourquoi cette technologie m'intéresse</h4>
+          <p>
+            Elle permet d'exécuter des langages comme C, C++ ou Rust sur le web, ce qui ouvre la
+            voie à des applications web plus performantes (jeux, outils de calcul, traitement
+            d'images) tout en restant compatible avec les technologies que j'apprends actuellement.
+          </p>
+          <div class="watch-sources">
+            <h4>Sources</h4>
+            <ul>
+              <li><a href="https://webassembly.org/" target="_blank" rel="noopener noreferrer">webassembly.org — site officiel</a></li>
+              <li><a href="https://developer.mozilla.org/fr/docs/WebAssembly" target="_blank" rel="noopener noreferrer">MDN Web Docs — WebAssembly</a></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Contact</h2>
+          <p class="section-subtitle">N'hésitez pas à me contacter pour toute question ou opportunité.</p>
+        </div>
+
+        <div class="contact-actions">
+          <!-- Remplacer par la vraie adresse e-mail -->
+          <a href="mailto:votre.email@exemple.com" class="btn btn-outline btn-contact">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M4 4h16v16H4z"/><path d="m22 6-10 7L2 6"/>
+            </svg>
+            Email
+          </a>
+
+          <a href="https://github.com/Kevinbcd" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-contact">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.55 2.87 8.41 6.84 9.77.5.1.68-.22.68-.5 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.46-1.2-1.11-1.52-1.11-1.52-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 2.5-.35c.85 0 1.71.12 2.5.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.61.69.5A10.02 10.02 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/>
+            </svg>
+            GitHub
+          </a>
+
+          <!-- Optionnel : remplacer "#" par le vrai lien LinkedIn -->
+          <a href="#" class="btn btn-outline btn-contact" aria-label="Lien LinkedIn à compléter">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M4.98 3.5C4.98 4.88 3.9 6 2.5 6S0 4.88 0 3.5 1.1 1 2.5 1s2.48 1.12 2.48 2.5ZM.5 8h4V23h-4V8Zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.8c0-1.62-.03-3.7-2.26-3.7-2.26 0-2.6 1.76-2.6 3.58V23h-4V8Z"/>
+            </svg>
+            LinkedIn <span class="placeholder-tag">(à compléter)</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Kevin - Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
