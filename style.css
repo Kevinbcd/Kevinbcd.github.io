@@ -249,13 +249,17 @@ button:focus-visible {
    ========================================================= */
 .hero {
   padding: 6rem 0 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .hero-inner {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 3rem;
-  align-items: center;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  width: 100%;
 }
 
 .hero-kicker {
@@ -282,8 +286,15 @@ button:focus-visible {
   margin-bottom: 2rem;
 }
 
+.hero-text {
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .hero-actions {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
 }
